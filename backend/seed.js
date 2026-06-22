@@ -19,7 +19,7 @@ const USERS = [
   // ── Admins / Main accounts ─────────────────────────────────────────────
   {
     name:'Areeba Sajjad', email:'areeba@skillswap.pk', role:'admin',
-    bio:'CS student & React expert. Teaching web dev, learning ML. FA23-BCS-033.',
+    bio:'CS student & React expert. Teaching web dev, learning Full Stack. FA23-BCS-033.',
     points:950, level:5, sessionsCompleted:14, rating:4.9, totalRatings:10,
     skillsTeaching:[
       {skill:'React',      level:'Expert',       description:'Hooks, Context API, Redux, performance'},
@@ -38,8 +38,8 @@ const USERS = [
     ],
   },
   {
-    name:'Hifza Ikram', email:'hifza@skillswap.pk', role:'admin',
-    bio:'UI/UX designer. Creating beautiful interfaces is my passion. FA23-BCS-053.',
+    name:'Eeba Sajjad', email:'Eeba@skillswap.pk', role:'admin',
+    bio:'UI/UX designer. Creating beautiful interfaces is my passion. FA23-BCS-033.',
     points:720, level:4, sessionsCompleted:10, rating:4.8, totalRatings:8,
     skillsTeaching:[
       {skill:'UI/UX Design',    level:'Expert',       description:'Figma, wireframing, prototyping, UX research'},

@@ -130,6 +130,43 @@ export default function LoginPage({ isRegister }) {
         <p style={{ textAlign: 'center', marginTop: 20, fontSize: 12, color: '#475569' }}>
           By continuing, you agree to our Terms & Privacy Policy
         </p>
+        {/* Demo Credentials */}
+        <div style={{
+          marginTop: 20,
+          padding: '16px',
+          background: 'rgba(108,99,255,0.08)',
+          border: '1px solid rgba(108,99,255,0.2)',
+          borderRadius: 12,
+        }}>
+          <p style={{ textAlign: 'center', fontSize: 12, color: '#6c63ff', fontWeight: 700, marginBottom: 10 }}>
+            🧪 Demo Account
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12 }}>
+              <span style={{ color: '#64748b' }}>Email</span>
+              <span style={{ color: '#f1f5f9', fontFamily: 'monospace' }}>hassan@skillswap.pk</span>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12 }}>
+              <span style={{ color: '#64748b' }}>Password</span>
+              <span style={{ color: '#f1f5f9', fontFamily: 'monospace' }}>Password123</span>
+            </div>
+          </div>
+          <button
+            onClick={() => {
+              setForm({ name: '', email: 'hassan@skillswap.pk', password: 'Password123' });
+              setMode('login');
+            }}
+            style={{
+              width: '100%', marginTop: 10, padding: '8px',
+              background: 'rgba(108,99,255,0.15)',
+              border: '1px solid rgba(108,99,255,0.3)',
+              borderRadius: 8, color: '#6c63ff',
+              fontSize: 12, fontWeight: 600, cursor: 'pointer',
+            }}
+          >
+            ⚡ Auto-fill Demo Credentials
+          </button>
+        </div>
       </div>
     </div>
   );

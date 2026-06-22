@@ -84,9 +84,11 @@ app.get('/api/health', (req, res) => {
 const { errorHandler } = require('./middleware/errorHandler');
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5001;
-server.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT} in ${process.env.NODE_ENV} mode`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 5001;
+  server.listen(PORT, () => {
+    console.log(`🚀 Server running on port ${PORT}`);
+  });
+}
 
-module.exports = { app, io };
+module.exports = app;
