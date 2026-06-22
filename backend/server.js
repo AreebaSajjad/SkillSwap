@@ -15,7 +15,11 @@ const server = http.createServer(app);
 // Socket.io setup
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || 'http://localhost:3000',
+    origin: [
+      process.env.CLIENT_URL || 'http://localhost:3000',
+      'https://skillswap-murex-seven.vercel.app',
+      'http://localhost:3000',
+    ],
     methods: ['GET', 'POST'],
     credentials: true,
   },
@@ -35,7 +39,11 @@ app.use('/api/', limiter);
 
 // CORS
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: [
+    process.env.CLIENT_URL || 'http://localhost:3000',
+    'https://skillswap-murex-seven.vercel.app',
+    'http://localhost:3000',
+  ],
   credentials: true,
 }));
 
