@@ -144,16 +144,16 @@ export default function LoginPage({ isRegister }) {
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12 }}>
               <span style={{ color: '#64748b' }}>Email</span>
-              <span style={{ color: '#f1f5f9', fontFamily: 'monospace' }}>hassan@skillswap.pk</span>
+              <span style={{ color: '#f1f5f9', fontFamily: 'monospace' }}>rabea@skillswap.pk</span>
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12 }}>
               <span style={{ color: '#64748b' }}>Password</span>
-              <span style={{ color: '#f1f5f9', fontFamily: 'monospace' }}>Password123</span>
+              <span style={{ color: '#f1f5f9', fontFamily: 'monospace' }}>password123</span>
             </div>
           </div>
           <button
             onClick={() => {
-              setForm({ name: '', email: 'hassan@skillswap.pk', password: 'Password123' });
+              setForm({ name: '', email: 'rabea@skillswap.pk', password: 'password123' });
               setMode('login');
             }}
             style={{
